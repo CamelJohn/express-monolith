@@ -7,7 +7,7 @@ const web_app = express();
 
 web_app.use(middleware.base);
 
-web_app.use('/health/', health_check_routes);
+web_app.use('/health', health_check_routes);
 
 web_app.use('/api/v1/', main_routes);
 
