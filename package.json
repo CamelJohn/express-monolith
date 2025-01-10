@@ -27,7 +27,6 @@
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   },
-  "type": "module",
   "scripts": {
     "add:module": "./add-module.sh",
     "check-types": "tsc --noEmit",
