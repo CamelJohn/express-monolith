@@ -32,6 +32,7 @@
     "check-types": "tsc --noEmit",
     "build": "node ./esbuild.build.js",
     "watch": "node ./esbuild.watch.js",
-    "test": "jest"
+    "test": "jest",
+    "dev": "tsx src/index.ts"
   }
 }

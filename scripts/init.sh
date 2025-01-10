@@ -13,5 +13,6 @@ npm pkg set scripts.check-types="tsc --noEmit"
 npm pkg set scripts.build="node ./esbuild.build.js"
 npm pkg set scripts.watch="node ./esbuild.watch.js"
 npm pkg set scripts.test="jest"
+npm pkg set scripts.dev="tsx src/index.ts"
 
-cp -R templates/ .
+cp -R templates/base/ .
