@@ -1,1 +1,1 @@
-rm -rf node_modules src tests .nvmrc Dockerfile* jest.config.ts tsconfig*
+rm -rf node_modules src tests .nvmrc Dockerfile* jest.config.ts tsconfig* nodemon*

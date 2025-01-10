@@ -4,7 +4,7 @@ npm i --save express cors helmet morgan http-errors joi dotenv jest ts-jest supe
 
 # install dev dependencies
 echo "installing dev dependencies"
-npm i --save-dev @types/node @types/express @types/cors @types/morgan @types/jest @types/supertest typescript esbuild tsx
+npm i --save-dev @types/node @types/express @types/cors @types/morgan @types/jest @types/supertest typescript esbuild ts-node nodemon
 
 # add scripts
 echo "adding scripts to package.json"
@@ -13,6 +13,6 @@ npm pkg set scripts.check-types="tsc --noEmit"
 npm pkg set scripts.build="node ./esbuild.build.js"
 npm pkg set scripts.watch="node ./esbuild.watch.js"
 npm pkg set scripts.test="jest"
-npm pkg set scripts.dev="tsx src/index.ts"
+npm pkg set scripts.dev="nodemon nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
 
 cp -R templates/base/ .
