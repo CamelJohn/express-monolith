@@ -37,6 +37,7 @@ const service = {
     generate_identity,
     refresh_access,
     refresh_identity,
+    validate_token
 };
 
 export default service;

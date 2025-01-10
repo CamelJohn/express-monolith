@@ -1,18 +1,18 @@
 import { AuthHeader, LoginDto, RegisterDto } from './interfaces';
 
-const register = async (dto: RegisterDto) => {
+const register = async (_dto: RegisterDto) => {
     try {
     } catch (error) {}
 };
-const login = async (dto: LoginDto) => {
+const login = async (_dto: LoginDto) => {
     try {
     } catch (error) {}
 };
-const logout = async (auth_header: AuthHeader) => {
+const logout = async (_auth_header: AuthHeader) => {
     try {
     } catch (error) {}
 };
-const me = async (auth_header: AuthHeader) => {
+const me = async (_auth_header: AuthHeader) => {
     try {
     } catch (error) {}
 };

@@ -1,5 +1,4 @@
 import { type RequestHandler, Router } from 'express';
-import middleware from './middleware.base';
 
 enum HealthCheckStatusEnum {
     HEALTHY = 'healthy',
@@ -9,17 +8,17 @@ enum HealthCheckStatusEnum {
     UNAVAILABLE = 'unhealthy',
 }
 
-const basic_healh_check: RequestHandler = (req, res, next) => {
+const basic_healh_check: RequestHandler = (_, res, __) => {
     console.log('basic');
     // tbd return an array of details where each record is the service name (e.g database, and status: 'up' / 'down')
     res.status(200).json({ status: HealthCheckStatusEnum.HEALTHY });
 };
-const readiness_healh_check: RequestHandler = (req, res, next) => {
+const readiness_healh_check: RequestHandler = (_, res, __) => {
     console.log('ready');
     // tbd return an array of details where each record is the service name (e.g database, and status: 'up' / 'down')
     res.status(200).json({ status: HealthCheckStatusEnum.READY });
 };
-const liveness_healh_check: RequestHandler = (req, res, next) => {
+const liveness_healh_check: RequestHandler = (_, res, __) => {
     console.log('alive');
     // tbd return an array of details where each record is the service name (e.g database, and status: 'up' / 'down')
     res.status(200).json({ status: HealthCheckStatusEnum.ALIVE });

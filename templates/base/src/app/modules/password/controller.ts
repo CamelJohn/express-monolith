@@ -1,30 +1,21 @@
 import { type RequestHandler } from 'express';
 
-const register: RequestHandler = async (req, res, next) => {
+const generate: RequestHandler = async (_, __, next) => {
     try {
     } catch (error) {
         next(error);
     }
 };
-const register: RequestHandler = async (req, res, next) => {
-    try {
-    } catch (error) {
-        next(error);
-    }
-};
-const register: RequestHandler = async (req, res, next) => {
-    try {
-    } catch (error) {
-        next(error);
-    }
-};
-const register: RequestHandler = async (req, res, next) => {
+const forgot: RequestHandler = async (_, __, next) => {
     try {
     } catch (error) {
         next(error);
     }
 };
 
-const controller = {};
+const controller = {
+    generate,
+    forgot
+};
 
 export default controller;
