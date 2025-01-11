@@ -18,4 +18,4 @@ npm pkg set scripts.watch="nodemon src/index.ts"
 npm pkg set scripts.dev="docker compose -f docker-compose.dev.yml up"
 npm pkg set scripts.postdev="docker compose -f docker-compose.dev.yml down -v"
 
-cp -R ../templates/base/ .
+cp -R $(pwd)/node_modules/bxp/templates/base/ .
