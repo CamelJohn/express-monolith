@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # install dependencies
 echo "installing dependencies"
 npm i --save express cors helmet morgan http-errors joi dotenv jest ts-jest supertest typeorm reflect-metadata pg jsonwebtoken bcryptjs

@@ -1,3 +1,10 @@
+#!/usr/bin/env bash
+
+if [[ $# -eq 0 ]]; then
+  echo "No arguments provided"
+  exit 1
+fi
+
 mkdir -p src/app/modules/$1
 
 cp -R templates/module/ src/app/modules/$1/

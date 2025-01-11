@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 rm -rf node_modules src tests .nvmrc Dockerfile* jest.config.ts tsconfig* nodemon* docker-compose.dev.yml .env requests.rest
 
 npm uninstall --save express cors helmet morgan http-errors joi dotenv jest ts-jest supertest typeorm reflect-metadata pg jsonwebtoken bcryptjs
