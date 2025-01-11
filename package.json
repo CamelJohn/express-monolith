@@ -2,7 +2,7 @@
     "name": "bxp",
     "private": false,
     "description": "a simple shell script bases express.js cli",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "bin": {
        "bxp" : "./scripts/bxp.sh"
     },
