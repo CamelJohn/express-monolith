@@ -1,3 +1,21 @@
 {
-    "scripts": {}
+    "name": "bootstraper",
+    "description": "a simple shell script bases express.js cli",
+    "version": "1.0.0",
+    "bin": {
+        "init": "./scripts/init.sh",
+        "cleanup": "./scripts/cleanup.sh",
+        "add:module": "./scripts/add-module.sh"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CamelJohn/express-monolith.git"
+    },
+    "keywords": ["cli", "express", "expressjs"],
+    "authror": "Jonathan Atia jonathan23986@gmail.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CamelJohn/express-monolith/issues"
+    },
+    "homepage": "https://github.com/CamelJohn/express-monolith"
 }

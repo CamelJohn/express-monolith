@@ -11,8 +11,6 @@ async function regiser_module_routes(module_name) {
 
         const main_routes_file_content = main_routes_file.split('\n');
 
-        console.log({ main_routes_file });
-
         const index_of_main_routes_expression = main_routes_file_content.indexOf(
             'const main_routes = Router();'
         );
