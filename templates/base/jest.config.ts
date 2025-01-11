@@ -4,6 +4,7 @@ const preset = createDefaultPreset();
 
 const config: JestConfigWithTsJest = {
     ...preset,
+    verbose: true
 };
 
-export default preset;
+export default config;

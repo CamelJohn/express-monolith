@@ -9,17 +9,14 @@ enum HealthCheckStatusEnum {
 }
 
 const basic_healh_check: RequestHandler = (_, res, __) => {
-    console.log('basic');
     // tbd return an array of details where each record is the service name (e.g database, and status: 'up' / 'down')
     res.status(200).json({ status: HealthCheckStatusEnum.HEALTHY });
 };
 const readiness_healh_check: RequestHandler = (_, res, __) => {
-    console.log('ready');
     // tbd return an array of details where each record is the service name (e.g database, and status: 'up' / 'down')
     res.status(200).json({ status: HealthCheckStatusEnum.READY });
 };
 const liveness_healh_check: RequestHandler = (_, res, __) => {
-    console.log('alive');
     // tbd return an array of details where each record is the service name (e.g database, and status: 'up' / 'down')
     res.status(200).json({ status: HealthCheckStatusEnum.ALIVE });
 };
