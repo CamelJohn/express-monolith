@@ -1,5 +1,6 @@
 {
-    "name": "bootstrapper",
+    "name": "bxp",
+    "private": false,
     "description": "a simple shell script bases express.js cli",
     "version": "1.0.0",
     "bin": {
