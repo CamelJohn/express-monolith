@@ -3,13 +3,13 @@
 run_command() {
     case "$1" in
         init)
-            ./scripts/init.sh "${@:2}"
+            $(pwd)/node_modules/bxp/scripts/init.sh "${@:2}"
             ;;
         cleanup)
-            ./scripts/cleanup.sh "${@:2}"
+            $(pwd)/node_modules/bxp/scripts/cleanup.sh "${@:2}"
             ;;
         add:module)
-            ./scripts/add-module.sh "${@:2}"
+            $(pwd)/node_modules/bxp/scripts/add-module.sh "${@:2}"
             ;;
         *)
             echo "Invalid command"
