@@ -10,7 +10,8 @@ npm i --save-dev @types/node @types/express @types/cors @types/morgan @types/jes
 
 # add scripts
 echo "adding scripts to package.json"
-npm pkg set scripts.add:module="add:module"
+npm pkg set scripts.add:module="bxp add:module"
+npm pkg set scripts.cleanup="bxp cleanup"
 npm pkg set scripts.prebuild="tsc --noEmit"
 npm pkg set scripts.build="tsc"
 npm pkg set scripts.test="jest"
