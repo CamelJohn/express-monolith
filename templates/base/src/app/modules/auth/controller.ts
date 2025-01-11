@@ -2,16 +2,22 @@ import { type RequestHandler } from 'express';
 import { type LoginRequestHandler, type RegisterRequestHandler } from './interfaces';
 import service from './service';
 
-const register: RegisterRequestHandler = async (req, _, next) => {
+const register: RegisterRequestHandler = async (req, res, next) => {
     try {
-        await service.register(req.body);
+        const user = await service.register(req.body);
+        
+        res.status(201).json(user);
     } catch (error) {
         next(error);
     }
 };
-const login: LoginRequestHandler = async (req, _, next) => {
+const login: LoginRequestHandler = async (req, res, next) => {
     try {
-        await service.login(req.body);
+        const is_logged_in = await service.login(req.body);
+
+        // TODO: send back a token
+
+        res.status(200).json({ is_logged_in });
     } catch (error) {
         next(error);
     }

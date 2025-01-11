@@ -1,10 +1,10 @@
 # install dependencies
 echo "installing dependencies"
-npm i --save express cors helmet morgan http-errors joi dotenv jest ts-jest supertest typeorm reflect-metadata pg jsonwebtoken bcrypt
+npm i --save express cors helmet morgan http-errors joi dotenv jest ts-jest supertest typeorm reflect-metadata pg jsonwebtoken bcryptjs
 
 # install dev dependencies
 echo "installing dev dependencies"
-npm i --save-dev @types/node @types/express @types/cors @types/morgan @types/jest @types/supertest typescript nodemon ts-node
+npm i --save-dev @types/node @types/express @types/cors @types/morgan @types/jest @types/supertest @types/bcryptjs typescript nodemon ts-node
 
 # add scripts
 echo "adding scripts to package.json"

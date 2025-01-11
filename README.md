@@ -1,3 +1,9 @@
 # express-monolith
 
-Add `{ "extends": "./tsconfig.base.json" }` to your tsconfig.json file
+An oppinioneted way to prototype your expressjs monorepo.
+
+## Available commands:
+
+- init
+- add:module
+- dev
