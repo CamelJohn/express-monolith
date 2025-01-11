@@ -4,7 +4,7 @@ npm i --save express cors helmet morgan http-errors joi dotenv jest ts-jest supe
 
 # install dev dependencies
 echo "installing dev dependencies"
-npm i --save-dev @types/node @types/express @types/cors @types/morgan @types/jest @types/supertest @types/bcryptjs typescript nodemon ts-node
+npm i --save-dev @types/node @types/express @types/cors @types/morgan @types/jest @types/supertest @types/bcryptjs @types/jsonwebtoken typescript nodemon ts-node
 
 # add scripts
 echo "adding scripts to package.json"

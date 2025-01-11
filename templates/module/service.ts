@@ -1,10 +1,11 @@
-const example = async () => {
-    try {
-    } catch (error) {}
-};
+import AppDataSource from '../../database';
+import ExampleEntity from './entity';
+class Service {
+    constructor(private exampleRepository = AppDataSource.getRepository(ExampleEntity)) {}
 
-const service = {
-    example,
-};
+    async get () {
+        return this.exampleRepository.findOne();
+    }
+}
 
-export default service;
+export default Service;

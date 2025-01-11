@@ -1,14 +1,15 @@
 import { RequestHandler } from 'express';
-import service from './service';
+import Service from './service';
 
-const example: RequestHandler = async (req, res, next) => {
-    try {
-    } catch (error) {
-        next(error);
-    }
+class Controller {
+    constructor(private service = new Service()) {}
+    get: RequestHandler = async (req, res, next) => {
+        try {
+            await this.service.get();
+        } catch (error) {
+            next(error);
+        }
+    };
+}
 
-const controller = {
-    example,
-};
-
-export default controller;
+export default Controller;
